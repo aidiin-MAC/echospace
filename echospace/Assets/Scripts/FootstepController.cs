@@ -48,7 +48,7 @@ public class FootstepController : MonoBehaviour
         {
             if (math.abs(deltaX) > deadZone || math.abs(deltaZ) > deadZone)
             {
-                timer -= Time.deltaTime;
+                timer -= math.abs(deltaX)+math.abs(deltaZ);
             }
         }  
             
