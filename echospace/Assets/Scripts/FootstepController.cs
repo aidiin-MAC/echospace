@@ -4,10 +4,15 @@ using System.Collections.Generic;
 
 public class FootstepController : MonoBehaviour
 {
+    //Ground Terrain is a variable to control which sound bank is used
     public int groundTerrain;
     public Transform myTransform;
     public Dictionary<int, AudioClip> clipList;
+    
+    //Footstep Soundbanks
     public List<AudioClip> placeholderClips;
+
+    //Variables for determining movement speed
     public float oldX;
     public float oldZ;
     public float deltaX;
@@ -32,16 +37,21 @@ public class FootstepController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Determines movement rate
         deltaX = myTransform.position.x - oldX;
         deltaZ = myTransform.position.z - oldZ;
         oldX = myTransform.position.x;
         oldZ = myTransform.position.z;
+
+        //Plays footstep sound after a cooldown while moving, tied to movement speed
         if (timer < 0)
         {
             footstepSource.generator = chosenClip;
             footstepSource.Play();
             timer = cooldownTime;
             Debug.Log("footstep");
+
+            //Should be changed to use a range based on how many sound clips are in the current sound bank
             chosenClip = placeholderClips[UnityEngine.Random.Range(0, 2)];
         }
         else
@@ -53,7 +63,8 @@ public class FootstepController : MonoBehaviour
         }  
             
 
-        
+        //WIP code to switch sound banks below
+
         /*if (math.abs(myRigidbody.linearVelocity.x) > 1 | math.abs(myRigidbody.linearVelocity.y) > 1)
         {
             switch (groundTerrain)
