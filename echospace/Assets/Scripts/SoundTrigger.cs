@@ -3,10 +3,14 @@ using UnityEngine;
 public class SoundTrigger : MonoBehaviour
 {
     public AudioSource target;
+    [SerializeField] bool isStoryTrigger;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if (isStoryTrigger == true)
+        {
+            GameObject Manager = GameObject.FindGameObjectWithTag("Manager");
+        }
     }
 
     // Update is called once per frame
@@ -17,7 +21,15 @@ public class SoundTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        target.Play();
-        Debug.Log("this would play a scary sound");
+        if (isStoryTrigger == true)
+        {
+            Debug.Log("TheStoryIsProgressing");
+        }
+        else
+        {
+            target.Play();
+            Debug.Log("this would play a scary sound");
+        }
+
     }
 }
