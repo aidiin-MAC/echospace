@@ -8,9 +8,14 @@ public class FootstepController : MonoBehaviour
     public int groundTerrain;
     public Transform myTransform;
     public Dictionary<int, AudioClip> clipList;
-    
+
+    //Clips to pull from
+    public List<AudioClip> activeClips;
+
     //Footstep Soundbanks
     public List<AudioClip> placeholderClips;
+    public List<AudioClip> forestGrassClips;
+    
 
     //Variables for determining movement speed
     public float oldX;
@@ -46,13 +51,26 @@ public class FootstepController : MonoBehaviour
         //Plays footstep sound after a cooldown while moving, tied to movement speed
         if (timer < 0)
         {
+            switch (groundTerrain)
+            {
+                default:
+                    activeClips = placeholderClips;
+                    break;
+                case 0:
+                    activeClips = forestGrassClips;
+                    break;
+            }
+            
+
+            //Should be changed to use a range based on how many sound clips are in the current sound bank
+            chosenClip = activeClips[UnityEngine.Random.Range(0, activeClips.Capacity)];
+            Debug.Log(activeClips.Capacity);
             footstepSource.generator = chosenClip;
             footstepSource.Play();
             timer = cooldownTime;
             Debug.Log("footstep");
 
-            //Should be changed to use a range based on how many sound clips are in the current sound bank
-            chosenClip = placeholderClips[UnityEngine.Random.Range(0, 2)];
+
         }
         else
         {
