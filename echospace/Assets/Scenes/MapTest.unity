@@ -33532,6 +33532,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: grassClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b4bb6e09cf16614c8127911a5404189, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e52add1aec28d8948b29f2bc6e18cc80, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: af87db8c79475b24fb956a5d6943836d, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a560f0d004308d43bfaa0a11f3a7166, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ff61653315ab474b9bccb3eb8d38e2b, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c5f8f634202453498f23e16ea009187, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[6]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c193f213a50cb9846a1fcdea3bfdd292, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[7]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 93dd92cf1b7a3c64b9ff7d677e95d2d7, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'grassClips.Array.data[8]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c9f6542ba7b5d1c42b94217124a81086, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
