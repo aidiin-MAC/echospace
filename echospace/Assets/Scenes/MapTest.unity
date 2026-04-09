@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (10)
@@ -281,6 +285,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (11)
@@ -1055,6 +1063,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (13)
@@ -1112,6 +1124,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: e246c5f2b83d5594ca321b2db5d7b875, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (4)
@@ -1169,6 +1185,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (35)
@@ -1635,6 +1655,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (30)
@@ -2059,6 +2083,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (36)
@@ -2843,6 +2871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (23)
@@ -3612,6 +3644,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (25)
@@ -4087,6 +4123,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (38)
@@ -5039,6 +5079,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 323ce40abd914234c886a20c9fd00292, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (9)
@@ -6665,6 +6709,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (12)
@@ -7501,6 +7549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (9)
@@ -7971,6 +8023,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (34)
@@ -8028,6 +8084,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (4)
@@ -8493,6 +8553,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a6fda4916a92d141b431056c9262532, type: 3}
     - target: {fileID: 4573155091102710463, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: isStoryTrigger
       value: 1
@@ -9039,6 +9103,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (14)
@@ -9816,6 +9884,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 08d512118661a3d48a4c43d83d2194ea, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (6)
@@ -11139,6 +11211,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: d5891be7fa538d347a253b6cd8a0ae2c, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (5)
@@ -11759,6 +11835,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: afe9daed319339b43990752d141cbdb1, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (1)
@@ -12177,6 +12257,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (26)
@@ -12306,6 +12390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (19)
@@ -12665,6 +12753,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f7647b536dfad42832b24e7894a499, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger
@@ -12957,6 +13049,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (8)
@@ -13914,6 +14010,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (12)
@@ -13971,6 +14071,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (31)
@@ -14206,6 +14310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (18)
@@ -14570,6 +14678,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (22)
@@ -16469,6 +16581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (20)
@@ -16526,6 +16642,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (37)
@@ -16640,6 +16760,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (7)
@@ -16702,6 +16826,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (13)
@@ -17130,6 +17258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (17)
@@ -17192,6 +17324,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (5)
@@ -18107,6 +18243,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (3)
@@ -18164,6 +18304,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (33)
@@ -18860,6 +19004,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 581c77f3e92f5334c8d909eecb230b89, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (7)
@@ -19752,6 +19900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (32)
@@ -19814,6 +19966,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (16)
@@ -20356,6 +20512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 323ce40abd914234c886a20c9fd00292, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (11)
@@ -20413,6 +20573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (27)
@@ -21239,6 +21403,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (24)
@@ -21912,6 +22080,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 92a33f804e03711418447f3f181e5e36, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (5)
@@ -21969,6 +22141,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (15)
@@ -23334,6 +23510,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 73181adaa129460498472d953e90329b, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (9)
@@ -23752,6 +23932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (10)
@@ -24101,6 +24285,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (2)
@@ -24174,6 +24362,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c37cb2ed3e3a3984e9b1b07d6b774fd2, type: 3}
     - target: {fileID: 4573155091102710463, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: isStoryTrigger
       value: 1
@@ -24423,6 +24615,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (28)
@@ -24547,6 +24743,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: f1f6010d0e2cecc4cb5a2f019e982489, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (10)
@@ -27404,6 +27604,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (6)
@@ -28725,6 +28929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound
@@ -30038,6 +30246,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (21)
@@ -30283,6 +30495,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (11)
@@ -32655,6 +32871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c81b1d5a5c86e24fa41c31595e204be, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (2)
@@ -33459,6 +33679,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c8f166a002eeb3e40b7b2c9289673f58, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (29)
@@ -33533,9 +33757,49 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: tileClips.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
       propertyPath: grassClips.Array.size
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: riverClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: stoneClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: puddleClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'tileClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 77988fc984455bc42b518a829a416ed5, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'tileClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fccbb9c19a2bbc4fb2782ea08f510d9, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'tileClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ebe84ece88b54df4099b08bfa3796b25, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'tileClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d454561c707bf2b44aa87111bc4f65c9, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'tileClips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c6228df38fe0b684191bba1e9eb94705, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'tileClips.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c30647c14dc8ae74cb9597ec3b36d289, type: 3}
     - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
       propertyPath: 'grassClips.Array.data[0]'
       value: 
@@ -33572,6 +33836,54 @@ PrefabInstance:
       propertyPath: 'grassClips.Array.data[8]'
       value: 
       objectReference: {fileID: 8300000, guid: c9f6542ba7b5d1c42b94217124a81086, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'riverClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: af289bbee5209f94bb4efb3673555c18, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'riverClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ccfe5834ac4f53c47825975e888a78db, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'riverClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 84153af13e001e34e91bfbf70ddd1a05, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'stoneClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: fcbce0e5ccd51df4181ec04cc3173bdd, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'stoneClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: deee2329be29c5642b0e4f77581a5d9e, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'stoneClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 394ff1eaa2630b849a042912f934d4af, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'stoneClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 68fbbc2fa6072df47878e94cef1506d9, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'stoneClips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 68fbbc2fa6072df47878e94cef1506d9, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'puddleClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c1f399dd899d524ea4b296a22381be1, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'puddleClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 4b38cc1a379e4e3499101e1e3985deea, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'puddleClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a1eb840fadc62594989eb9e12339245c, type: 3}
+    - target: {fileID: 7937852580951855276, guid: 4bf663896d3b5c649a333bf55acc7685, type: 3}
+      propertyPath: 'puddleClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ab4b091b544ab8544a474f01485ec1ef, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34004,6 +34316,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 914265aba2ef4574aa96da53507fec46, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (3)
@@ -34061,6 +34377,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8866852882246329787, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 75517365fa452b8408b1797d35bfac88, type: 3}
     - target: {fileID: 8976798085534991091, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
       propertyPath: m_Name
       value: PointSound (1)
