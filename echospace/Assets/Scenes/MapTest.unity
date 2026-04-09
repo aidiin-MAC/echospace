@@ -1127,7 +1127,7 @@ PrefabInstance:
     - target: {fileID: 4558017419562937383, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: e246c5f2b83d5594ca321b2db5d7b875, type: 3}
+      objectReference: {fileID: 8300000, guid: 40a9f9bbc7b04484b9a76ea300c2e88c, type: 3}
     - target: {fileID: 5902726984139548283, guid: ef70b4bae4d5cb44b9900c3c80827fee, type: 3}
       propertyPath: m_Name
       value: SoundQeueTrigger (4)
@@ -18193,7 +18193,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 353bc501a8c83ce4ea4eecdd4ae617c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1306565085}
   m_SourcePrefab: {fileID: 100100000, guid: 353bc501a8c83ce4ea4eecdd4ae617c8, type: 3}
 --- !u!1001 &1173794199
 PrefabInstance:
@@ -20525,6 +20528,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db2017577b4b96c4a9b36dd233e576e6, type: 3}
+--- !u!1 &1306565081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 353bc501a8c83ce4ea4eecdd4ae617c8, type: 3}
+  m_PrefabInstance: {fileID: 1167971093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1306565085
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306565081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 353bc501a8c83ce4ea4eecdd4ae617c8, type: 3}
 --- !u!1001 &1311858915
 PrefabInstance:
   m_ObjectHideFlags: 0
