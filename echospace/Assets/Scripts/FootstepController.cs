@@ -56,8 +56,8 @@ public class FootstepController : MonoBehaviour
     void Update()
     {
         //Determines movement rate
-        deltaX = myTransform.position.x - oldX;
-        deltaZ = myTransform.position.z - oldZ;
+        deltaX = (myTransform.position.x - oldX)*Time.deltaTime;
+        deltaZ = (myTransform.position.z - oldZ)*Time.deltaTime;
         oldX = myTransform.position.x;
         oldZ = myTransform.position.z;
 

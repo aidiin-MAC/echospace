@@ -3,13 +3,17 @@ using UnityEngine;
 public class SoundTrigger : MonoBehaviour
 {
     public AudioSource target;
-    [SerializeField] bool isStoryTrigger;
+    private GameObject Manager;
+    private StoryManager Story;
+    [SerializeField] string type;
+    [SerializeField] string effectName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (isStoryTrigger == true)
+        if (type == "story" || type == "effect")
         {
-            GameObject Manager = GameObject.FindGameObjectWithTag("Manager");
+            Manager = GameObject.FindGameObjectWithTag("Manager");
+            Story = Manager.GetComponent<StoryManager>();
         }
     }
 
@@ -21,15 +25,28 @@ public class SoundTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isStoryTrigger == true)
+        if (other.tag == "Player")
         {
-            Debug.Log("TheStoryIsProgressing");
+            switch (type)
+            {
+                case "Story":
+                    Debug.Log("TheStoryIsProgressing");
+                    Story.IncrementChapter();
+                    gameObject.SetActive(false);
+                    break;
+                case "OneTime":
+                    target.Play();
+                    Debug.Log("this would play a scary sound");
+                    gameObject.SetActive(false);
+                    break;
+                case "Repeatable":
+                    target.Play();
+                    Debug.Log("this would play a scary sound");
+                    break;
+                case "Effect":
+                    Story.EffectToggle(effectName);
+                    break;
+            }
         }
-        else
-        {
-            target.Play();
-            Debug.Log("this would play a scary sound");
-        }
-
     }
 }
