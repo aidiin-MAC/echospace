@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
    
 
     public Rigidbody myRigidbody;
+    public GameObject Manager;
+    public StoryManager Story;
 
     InputAction moveAction;
     InputAction lookAction;
@@ -20,22 +22,35 @@ public class PlayerMovement : MonoBehaviour
     {
         moveAction = InputSystem.actions.FindAction("Move");
         lookAction = InputSystem.actions.FindAction("Look");
+
+        Manager = GameObject.FindGameObjectWithTag("Manager");
+        Story = Manager.GetComponent<StoryManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        playerActive = Story.canMove;
         if (playerActive)
         {
             Move();
             Look();
+        }
+        if (Story.chapter == 0)
+        {
+            transform.position = new Vector3(-172.28f, 0.48f, -38.26f);
+            if (moveAction.ReadValue<Vector2>().x != 0 | moveAction.ReadValue<Vector2>().y != 0)
+            {
+                Debug.Log("Begin the experience");
+                Story.IncrementChapter();
+            }
         }
 
     }
 
     private void Move()
     {
-        myRigidbody.MovePosition(transform.position + (transform.right * moveAction.ReadValue<Vector2>().x * moveSpeed) + (transform.forward * moveAction.ReadValue<Vector2>().y * moveSpeed));
+        myRigidbody.MovePosition(transform.position + (transform.right * (moveAction.ReadValue<Vector2>().x * Time.deltaTime) * moveSpeed) + (transform.forward * (moveAction.ReadValue<Vector2>().y * Time.deltaTime) * moveSpeed));
     }
 
     private void Look()

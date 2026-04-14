@@ -8,6 +8,7 @@ TagManager:
   - GroundStairs
   - GroundConcrete
   - GroundGrass
+  - Manager
   layers:
   - Default
   - TransparentFX

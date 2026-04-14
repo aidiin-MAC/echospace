@@ -5,16 +5,18 @@ public class SoundTrigger : MonoBehaviour
     public AudioSource target;
     private GameObject Manager;
     private StoryManager Story;
-    [SerializeField] string type;
+    public string type;
+    private bool active;
     [SerializeField] string effectName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (type == "story" || type == "effect")
+        if (type == "Story" || type == "Effect" || type == "Footstep")
         {
             Manager = GameObject.FindGameObjectWithTag("Manager");
             Story = Manager.GetComponent<StoryManager>();
         }
+        active = true;
     }
 
     // Update is called once per frame
@@ -35,9 +37,12 @@ public class SoundTrigger : MonoBehaviour
                     gameObject.SetActive(false);
                     break;
                 case "OneTime":
-                    target.Play();
-                    Debug.Log("this would play a scary sound");
-                    gameObject.SetActive(false);
+                    if (active)
+                    {
+                        target.Play();
+                        Debug.Log("this would play a scary sound");
+                        active = false;
+                    }
                     break;
                 case "Repeatable":
                     target.Play();
@@ -45,7 +50,23 @@ public class SoundTrigger : MonoBehaviour
                     break;
                 case "Effect":
                     Story.EffectToggle(effectName);
+                    Debug.Log("FootstepChanged");
                     break;
+                case "Footstep":
+                    Story.EffectToggle(effectName);
+                    break;
+            }
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Debug.Log("isPlayer");
+            if (type == "Footstep")
+            {
+                Story.EffectToggle("footstep0");
             }
         }
     }
