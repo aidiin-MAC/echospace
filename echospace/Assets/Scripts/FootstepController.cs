@@ -118,10 +118,52 @@ public class FootstepController : MonoBehaviour
         }
         else
         {
-            if (math.abs(deltaX) > deadZone || math.abs(deltaZ) > deadZone)
+            if (math.abs(deltaX) > 0 || math.abs(deltaZ) > 0)
             {
                 timer -= math.abs(deltaX) + math.abs(deltaZ);
             }
+<<<<<<< Updated upstream
+=======
+            else if (moving)
+            {
+                if (math.abs(moveAction.ReadValue<Vector2>().x) > 0.7 | math.abs(moveAction.ReadValue<Vector2>().y) > 0.7)
+                {
+                    chosenClip = bonkSound;
+                    footstepSource.generator = chosenClip;
+                    footstepSource.Play();
+                    //var gamepad = GetGamepad();
+                    //gamepad.SetMotorSpeeds(1, 1);
+                    Debug.Log("hitWall");
+                    moving = false;
+                }
+                else
+                {
+                    moving = false;
+                    Debug.Log("stoppedMoving");
+                }
+            }
+
+
+
+            //WIP code to switch sound banks below
+
+            //if player is moving(?)
+            /*if (math.abs(myRigidbody.linearVelocity.x) > 1 | math.abs(myRigidbody.linearVelocity.y) > 1)
+            {
+                switch (groundTerrain)
+                {
+                    case 0:
+                        GetListItem("placeholder");
+                        break;
+                    default:
+                        groundTerrain = 0;
+                        Debug.Log("null ground terrain");
+                        break;
+                }
+
+
+            }*/
+>>>>>>> Stashed changes
         }
 
 
