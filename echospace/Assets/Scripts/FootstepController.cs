@@ -1,7 +1,6 @@
 using UnityEngine;
 using Unity.Mathematics;
 using UnityEngine.InputSystem;
-using System.Linq;
 using System.Collections.Generic;
 
 public class FootstepController : MonoBehaviour
@@ -23,13 +22,10 @@ public class FootstepController : MonoBehaviour
     public List<AudioClip> stoneClips;
     public List<AudioClip> puddleClips;
     public List<AudioClip> tileClips;
-    public List<AudioClip> paperClips;
     public List<AudioClip> glassClips;
     public List<AudioClip> stairsClips;
 
     public List<AudioClip> riverClips;
-
-    public AudioClip bonkSound;
 
     //gravel, shrub hits?
 
@@ -39,7 +35,7 @@ public class FootstepController : MonoBehaviour
     public float oldZ;
     public float deltaX;
     public float deltaZ;
-    public double deadZone;
+    public float deadZone;
 
     /*public Lists mySoundBanks;
 
@@ -49,18 +45,14 @@ public class FootstepController : MonoBehaviour
     public float timer;
     public float cooldownTime;
 
-    //input reading
-    InputAction moveAction;
-    //PlayerInput _playerInput;
-    private bool moving;
+    //values relating to the bonk sound feature when players stop moving due to collision
+    public bool moving;
+    public AudioClip bonkSound;
+    public InputAction moveAction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        moveAction = InputSystem.actions.FindAction("Move");
-        moving = false;
-        //_playerInput = GetComponent<PlayerInput>();
-
         groundTerrain = 0;
         //0 = grass, 1 = stone, 2 = puddle, 3 = tile, 4 = glass, 5 = stairs
         timer = cooldownTime;
@@ -69,11 +61,11 @@ public class FootstepController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         //Determines movement rate
-        deltaX = (myTransform.position.x - oldX);
-        deltaZ = (myTransform.position.z - oldZ);
+        deltaX = myTransform.position.x - oldX;
+        deltaZ = myTransform.position.z - oldZ;
         oldX = myTransform.position.x;
         oldZ = myTransform.position.z;
 
@@ -107,10 +99,6 @@ public class FootstepController : MonoBehaviour
                     activeClips = tileClips;
                     Debug.Log("lab terrain");
                     break;
-                case 4:
-                    activeClips = paperClips;
-                    Debug.Log("paper terrain");
-                    break;
                 case 5:
                     //getListItem("stairsSound");
                     activeClips = stairsClips;
@@ -135,16 +123,14 @@ public class FootstepController : MonoBehaviour
             chosenClip = activeClips[UnityEngine.Random.Range(0, activeClips.Capacity)];
             footstepSource.generator = chosenClip;
             footstepSource.Play();
-            moving = true;
         }
         else
         {
-            if (math.abs(deltaX) > deadZone || math.abs(deltaZ) > deadZone)
+            if (math.abs(deltaX) > 0 || math.abs(deltaZ) > 0)
             {
                 timer -= math.abs(deltaX) + math.abs(deltaZ);
-
             }
-            /*else if (moving)
+            else if (moving)
             {
                 if (math.abs(moveAction.ReadValue<Vector2>().x) > 0.7 | math.abs(moveAction.ReadValue<Vector2>().y) > 0.7)
                 {
@@ -161,7 +147,7 @@ public class FootstepController : MonoBehaviour
                     moving = false;
                     Debug.Log("stoppedMoving");
                 }
-            }*/
+            }
 
 
 
@@ -183,33 +169,8 @@ public class FootstepController : MonoBehaviour
 
 
             }*/
+
         }
+
     }
-
-   /* private Gamepad GetGamepad()
-    {
-        return Gamepad.all.FirstOrDefault(g => _playerInput.devices.Any(d => d.deviceId == g.deviceId));
-
-        #region Linq Query Equivalent Logic
-        //Gamepad gamepad = null;
-        //foreach (var g in Gamepad.all)
-        //{
-        //    foreach (var d in _playerInput.devices)
-        //    {
-        //        if(d.deviceId == g.deviceId)
-        //        {
-        //            gamepad = g;
-        //            break;
-        //        }
-        //    }
-        //    if(gamepad != null)
-        //    {
-        //        break;
-        //    }
-        //}
-        //return gamepad;
-        #endregion
-    }*/
-
-
 }
