@@ -186,6 +186,8 @@ public class StoryManager : MonoBehaviour
                     Area3[i].SetActive(false);
                 }
                 break;
+
+            //Forest Update
             case 1:
             case 2:
                 switch (footstepId)
@@ -201,6 +203,8 @@ public class StoryManager : MonoBehaviour
                         break;
                 }
                 break;
+
+            //Cave Update
             case 3:
             case 4:
                 switch (footstepId)
@@ -216,6 +220,8 @@ public class StoryManager : MonoBehaviour
                         break;
                 }
                 break;
+
+            //Lab Update
             case 5:
             case 6:
             case 7:
