@@ -20601,7 +20601,7 @@ PrefabInstance:
     - target: {fileID: -6400281290468069383, guid: 353bc501a8c83ce4ea4eecdd4ae617c8, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -2432090755550338912, guid: d22525ee4136ae14589bf194adcfacae, type: 3}
+      objectReference: {fileID: -2432090755550338912, guid: 2e2ef410bd53d0941a37f0a091d57b45, type: 3}
     - target: {fileID: 919132149155446097, guid: 353bc501a8c83ce4ea4eecdd4ae617c8, type: 3}
       propertyPath: m_Name
       value: mapModel
@@ -23486,7 +23486,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: d22525ee4136ae14589bf194adcfacae, type: 3}
+  m_Mesh: {fileID: -2432090755550338912, guid: 2e2ef410bd53d0941a37f0a091d57b45, type: 3}
 --- !u!1001 &1311858915
 PrefabInstance:
   m_ObjectHideFlags: 0
