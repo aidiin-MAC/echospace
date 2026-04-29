@@ -8,10 +8,16 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public float lookSens;
 
+    //used to orient camera when in single stick mode
+    private Vector3 moveDirection;
+    public bool freeCam;
+    InputAction cameraToggleAction;
+
     //track current gamestate
     public bool playerActive;
     public bool replayActive;
     public bool replayRecord;
+
    
     //external references
     public Rigidbody myRigidbody;
@@ -30,10 +36,13 @@ public class PlayerMovement : MonoBehaviour
         //initialize input readings
         moveAction = InputSystem.actions.FindAction("Move");
         lookAction = InputSystem.actions.FindAction("Look");
+        cameraToggleAction = InputSystem.actions.FindAction("Attack");
 
         //initialize game state management
         Manager = GameObject.FindGameObjectWithTag("Manager");
         Story = Manager.GetComponent<StoryManager>();
+
+        freeCam = true;
     }
 
     // Update is called once per frame
@@ -46,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         if (Story.chapter == 0)
         {
             transform.position = new Vector3(-172.28f, 0.48f, -38.26f);
+            transform.LookAt(new Vector3(0, 0, 1) + transform.position);
             if (moveAction.ReadValue<Vector2>().x != 0 | moveAction.ReadValue<Vector2>().y != 0)
             {
                 Debug.Log("Begin the experience");
@@ -63,17 +73,36 @@ public class PlayerMovement : MonoBehaviour
         {
             Move();
             Look();
+            if (cameraToggleAction.IsPressed())
+            {
+                freeCam = !freeCam;
+            }
         }
     }
 
     private void Move()
     {
-        myRigidbody.MovePosition(myRigidbody.position + new Vector3(moveAction.ReadValue<Vector2>().x, 0, moveAction.ReadValue<Vector2>().y) * moveSpeed);
+        if (freeCam==true)
+        {
+            transform.Translate(moveAction.ReadValue<Vector2>().x * moveSpeed, 0, moveAction.ReadValue<Vector2>().y * moveSpeed);
+            
+        }
+        else {
+            transform.position = (myRigidbody.position + new Vector3(moveAction.ReadValue<Vector2>().x, 0, moveAction.ReadValue<Vector2>().y) * moveSpeed);
+        }
     }
 
     private void Look()
     {
-        //updates rigidbody angular velocity with player input
-        myRigidbody.angularVelocity = new Vector3(0, lookAction.ReadValue<Vector2>().x * lookSens, 0);
+        if (freeCam==true)
+        {
+            //updates rigidbody angular velocity with player input
+            myRigidbody.angularVelocity = new Vector3(0, lookAction.ReadValue<Vector2>().x * lookSens, 0);
+        }
+        else
+        {
+            moveDirection = new Vector3(moveAction.ReadValue<Vector2>().x, 0, moveAction.ReadValue<Vector2>().y).normalized;
+            transform.LookAt(moveDirection + transform.position);
+        }
     }
 }

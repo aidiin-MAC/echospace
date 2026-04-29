@@ -10,6 +10,7 @@ public class StoryManager : MonoBehaviour
     public float timer;
 
     public float sceneTimer;
+    [SerializeField] float failSceneTime;
     public bool sceneTimerActive;
 
     [SerializeField] float gameTimeLimit;
@@ -18,18 +19,28 @@ public class StoryManager : MonoBehaviour
     public bool echo;
     public bool canMove;
 
+    //SoundSourceAreas
     public List<GameObject> Area1;
     public List<GameObject> Area2;
     public List<GameObject> Area3;
+    public List<GameObject> Area4;
+
+    //AudioMixerPresets
     public AudioMixerSnapshot A1;
     public AudioMixerSnapshot A2;
     public AudioMixerSnapshot A3;
     public AudioMixerSnapshot End;
+    public AudioMixerSnapshot Loss;
 
     public List<GameObject> NarrativeSequences;
 
     private FootstepController Footsteps;
     private GameObject Player;
+
+    public List<GameObject> TimeWarnings;
+    public List<bool> TimeWarningsPlayed;
+
+    public bool monsterSoundPlayed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +52,7 @@ public class StoryManager : MonoBehaviour
         echo = false;
         Player = GameObject.FindGameObjectWithTag("Player");
         Footsteps = Player.GetComponent<FootstepController>();
+        monsterSoundPlayed = false;
     }
     [ContextMenu("IncrementChapter")]
     public void IncrementChapter()
@@ -110,6 +122,14 @@ public class StoryManager : MonoBehaviour
                 {
                     Area2[i].SetActive(false);
                 }
+                for (int i = 0; i < Area2.Count; i++)
+                {
+                    Area3[i].SetActive(false);
+                }
+                for (int i = 0; i < Area2.Count; i++)
+                {
+                    Area4[i].SetActive(true);
+                }
                 break;
             case 7:
                 NarrativeSequences[10].SetActive(true);
@@ -122,15 +142,16 @@ public class StoryManager : MonoBehaviour
                 break;
             case 8:
                 canMove = false;
-                NarrativeSequences[14].SetActive(true);
-                NarrativeSequences[14].GetComponent<AudioSource>().Play();
-                timer = 12;
+                Loss.TransitionTo(1.5f);
+                sceneTimer = failSceneTime;
                 break;
             case 9:
                 canMove = false;
-                chapter = 0;
-                ChapterStart();
-                SceneManager.LoadScene("MapTest");
+                Loss.TransitionTo(.5f);
+                TimeWarnings[4].SetActive(true);
+                TimeWarnings[4].GetComponent<AudioSource>().Play();
+                monsterSoundPlayed = true;
+                sceneTimer = failSceneTime;
                 break;
             default:
                 break;
@@ -184,6 +205,18 @@ public class StoryManager : MonoBehaviour
                 for (int i = 0; i < Area3.Count; i++)
                 {
                     Area3[i].SetActive(false);
+                }
+                for (int i = 0; i < Area3.Count; i++)
+                {
+                    Area4[i].SetActive(false);
+                }
+                for (int i = 0; i < TimeWarnings.Count; i++)
+                {
+                    TimeWarnings[i].SetActive(false);
+                }
+                for (int i = 0; i < TimeWarningsPlayed.Count; i++)
+                {
+                    TimeWarningsPlayed[i] = false;
                 }
                 break;
 
@@ -242,11 +275,27 @@ public class StoryManager : MonoBehaviour
                 }
                 break;
             case 8:
+                if (sceneTimer < 12 && monsterSoundPlayed == false)
+                {
+                    NarrativeSequences[14].SetActive(true);
+                    NarrativeSequences[14].GetComponent<AudioSource>().Play();
+                    monsterSoundPlayed = true;
+                }
+                if (sceneTimer < 0)
+                {
+                    End.TransitionTo(1f);
+                    SceneManager.LoadScene("GameField");
+                }
+                else
+                {
+                    sceneTimer -= Time.deltaTime;
+                }
                 break;
             case 9:
                 if (sceneTimer < 0)
                 {
-                    chapter = 0;
+                    End.TransitionTo(1f);
+                    SceneManager.LoadScene("GameField");
                 }
                 else
                 {
@@ -254,7 +303,7 @@ public class StoryManager : MonoBehaviour
                 }
                 break;
         }
-        if (chapter != 0) 
+        if (chapter != 0 && chapter !=9) 
         {
             if (timer > 0)
             {
@@ -263,8 +312,31 @@ public class StoryManager : MonoBehaviour
             else
             {
                 chapter = 9;
-                End.TransitionTo(5f);
                 ChapterStart();
+            }
+            if (timer < 120 && TimeWarningsPlayed[0] == false)
+            {
+                TimeWarningsPlayed[0] = true;
+                TimeWarnings[0].SetActive(true);
+                TimeWarnings[0].GetComponent<AudioSource>().Play();
+            }
+            if (timer < 80 && TimeWarningsPlayed[1] == false)
+            {
+                TimeWarningsPlayed[1] = true;
+                TimeWarnings[1].SetActive(true);
+                TimeWarnings[1].GetComponent<AudioSource>().Play();
+            }
+            if (timer < 40 && TimeWarningsPlayed[2] == false)
+            {
+                TimeWarningsPlayed[2] = true;
+                TimeWarnings[2].SetActive(true);
+                TimeWarnings[2].GetComponent<AudioSource>().Play();
+            }
+            if (timer < 10 && TimeWarningsPlayed[3] == false)
+            {
+                TimeWarningsPlayed[3] = true;
+                TimeWarnings[3].SetActive(true);
+                TimeWarnings[3].GetComponent<AudioSource>().Play();
             }
         }
     }
