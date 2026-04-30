@@ -46,6 +46,7 @@ public class SoundTrigger : MonoBehaviour
                     break;
                 case "TriggerToFootstep":
                     target.Play();
+                    Story.EffectToggle(effectName);
                     Debug.Log("this would play a scary sound");
                     type = "Footstep";
                     break;

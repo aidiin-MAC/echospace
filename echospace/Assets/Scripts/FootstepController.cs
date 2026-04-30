@@ -68,21 +68,10 @@ public class FootstepController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        //Determines movement rate
-        deltaX = (myTransform.position.x - oldX);
-        deltaZ = (myTransform.position.z - oldZ);
-        oldX = myTransform.position.x;
-        oldZ = myTransform.position.z;
-
-        //Plays footstep sound after a cooldown while moving, tied to movement speed
         if (timer < 0)
         {
-            // footstepSource.generator = chosenClip;
-            // footstepSource.Play();
-
             switch (groundTerrain)
             {
                 case 0:
@@ -127,6 +116,23 @@ public class FootstepController : MonoBehaviour
                     Debug.Log("null ground terrain");
                     break;
             }
+        }
+        
+    }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        //Determines movement rate
+        deltaX = (myTransform.position.x - oldX);
+        deltaZ = (myTransform.position.z - oldZ);
+        oldX = myTransform.position.x;
+        oldZ = myTransform.position.z;
+
+        //Plays footstep sound after a cooldown while moving, tied to movement speed
+        if (timer < 0)
+        {
+            // footstepSource.generator = chosenClip;
+            // footstepSource.Play();
 
             timer = cooldownTime;
             Debug.Log("footstep");
