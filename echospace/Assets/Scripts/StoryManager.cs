@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 using System.Collections.Generic;
 
 
@@ -42,6 +43,11 @@ public class StoryManager : MonoBehaviour
 
     public bool monsterSoundPlayed;
 
+    InputAction resetAction;
+    InputAction cameraAction;
+    private bool cameraReleased;
+    public Animator cameraControl;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,6 +59,10 @@ public class StoryManager : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         Footsteps = Player.GetComponent<FootstepController>();
         monsterSoundPlayed = false;
+
+        resetAction = InputSystem.actions.FindAction("Reset");
+        cameraAction = InputSystem.actions.FindAction("Camera");
+        cameraReleased = true;
     }
     [ContextMenu("IncrementChapter")]
     public void IncrementChapter()
@@ -66,6 +76,8 @@ public class StoryManager : MonoBehaviour
         {
             case 0:
                 timer = gameTimeLimit;
+                cameraControl.SetBool("IsOverview", true);
+                cameraControl.SetFloat("Blend", 0);
                 break;
             case 1:
                 canMove = true;
@@ -74,7 +86,8 @@ public class StoryManager : MonoBehaviour
                     Area1[i].SetActive(true);
                     Debug.Log("activated item " + i);
                 }
-                A1.TransitionTo(5f);
+                A1.TransitionTo(2f);
+                cameraControl.SetFloat("Blend", 0);
                 break;
             case 2:
                 NarrativeSequences[0].SetActive(true);
@@ -93,6 +106,7 @@ public class StoryManager : MonoBehaviour
                 NarrativeSequences[4].SetActive(true);
                 NarrativeSequences[4].GetComponent<AudioSource>().Play();
                 A2.TransitionTo(2f);
+                cameraControl.SetFloat("Blend", 0.25f);
                 break;
             case 4:
                 NarrativeSequences[3].SetActive(false);
@@ -111,6 +125,7 @@ public class StoryManager : MonoBehaviour
                 NarrativeSequences[5].GetComponent<AudioSource>().Play();
                 NarrativeSequences[6].SetActive(true);
                 A3.TransitionTo(2f);
+                cameraControl.SetFloat("Blend", 0.5f);
                 break;
             case 6:
                 NarrativeSequences[7].SetActive(true);
@@ -130,6 +145,7 @@ public class StoryManager : MonoBehaviour
                 {
                     Area4[i].SetActive(true);
                 }
+                cameraControl.SetFloat("Blend", 0.75f);
                 break;
             case 7:
                 NarrativeSequences[10].SetActive(true);
@@ -139,6 +155,7 @@ public class StoryManager : MonoBehaviour
                 NarrativeSequences[12].GetComponent<AudioSource>().Play();
                 NarrativeSequences[13].SetActive(true);
                 NarrativeSequences[13].GetComponent<AudioSource>().Play();
+                cameraControl.SetFloat("Blend", 1);
                 break;
             case 8:
                 canMove = false;
@@ -308,12 +325,27 @@ public class StoryManager : MonoBehaviour
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
+                if (cameraAction.IsPressed() && cameraReleased)
+                {
+                    cameraReleased = false;
+                    cameraControl.SetBool("IsOverview", !cameraControl.GetBool("IsOverview"));
+                }
+                else if (!cameraAction.IsPressed())
+                {
+                    cameraReleased = true;
+                }
+                if (resetAction.IsPressed())
+                {
+                    End.TransitionTo(1f);
+                    SceneManager.LoadScene("GameField");
+                }
             }
             else
             {
                 chapter = 9;
                 ChapterStart();
             }
+
             if (timer < 120 && TimeWarningsPlayed[0] == false)
             {
                 TimeWarningsPlayed[0] = true;

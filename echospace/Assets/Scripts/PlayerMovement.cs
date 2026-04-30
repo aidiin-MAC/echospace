@@ -11,12 +11,12 @@ public class PlayerMovement : MonoBehaviour
     //used to orient camera when in single stick mode
     private Vector3 moveDirection;
     public bool freeCam;
-    InputAction cameraToggleAction;
+//    InputAction cameraToggleAction;
 
     //track current gamestate
     public bool playerActive;
-    public bool replayActive;
-    public bool replayRecord;
+//    public bool replayActive;
+//    public bool replayRecord;
 
    
     //external references
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         //initialize input readings
         moveAction = InputSystem.actions.FindAction("Move");
         lookAction = InputSystem.actions.FindAction("Look");
-        cameraToggleAction = InputSystem.actions.FindAction("Attack");
+//        cameraToggleAction = InputSystem.actions.FindAction("Attack");
 
         //initialize game state management
         Manager = GameObject.FindGameObjectWithTag("Manager");
@@ -73,10 +73,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Move();
             Look();
-            if (cameraToggleAction.IsPressed())
+/*            if (cameraToggleAction.IsPressed())
             {
                 freeCam = !freeCam;
-            }
+            }*/
         }
     }
 

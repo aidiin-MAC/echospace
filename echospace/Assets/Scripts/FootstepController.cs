@@ -22,7 +22,7 @@ public class FootstepController : MonoBehaviour
     public List<AudioClip> stoneClips;
     public List<AudioClip> puddleClips;
     public List<AudioClip> tileClips;
-    public List<AudioClip> glassClips;
+    public List<AudioClip> paperClips;
     public List<AudioClip> stairsClips;
 
     public List<AudioClip> riverClips;
@@ -49,6 +49,10 @@ public class FootstepController : MonoBehaviour
     public bool moving;
     public AudioClip bonkSound;
     public InputAction moveAction;
+    public float hapticDurationHit;
+    public float hapticDurationStep;
+    public float hapticTimerHit;
+    public float hapticTimerStep;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -56,7 +60,11 @@ public class FootstepController : MonoBehaviour
         groundTerrain = 0;
         //0 = grass, 1 = stone, 2 = puddle, 3 = tile, 4 = glass, 5 = stairs
         timer = cooldownTime;
-
+        moveAction = InputSystem.actions.FindAction("Move");
+        hapticTimerHit = 0;
+        hapticTimerStep = 0;
+        Gamepad.current.SetMotorSpeeds(0, 0);
+        moving = false;
 
     }
 
@@ -64,8 +72,8 @@ public class FootstepController : MonoBehaviour
     void Update()
     {
         //Determines movement rate
-        deltaX = myTransform.position.x - oldX;
-        deltaZ = myTransform.position.z - oldZ;
+        deltaX = (myTransform.position.x - oldX)*Time.deltaTime;
+        deltaZ = (myTransform.position.z - oldZ)*Time.deltaTime;
         oldX = myTransform.position.x;
         oldZ = myTransform.position.z;
 
@@ -99,6 +107,10 @@ public class FootstepController : MonoBehaviour
                     activeClips = tileClips;
                     Debug.Log("lab terrain");
                     break;
+                case 4:
+                    activeClips = paperClips;
+                    Debug.Log("paper terrain");
+                    break;
                 case 5:
                     //getListItem("stairsSound");
                     activeClips = stairsClips;
@@ -123,22 +135,24 @@ public class FootstepController : MonoBehaviour
             chosenClip = activeClips[UnityEngine.Random.Range(0, activeClips.Capacity)];
             footstepSource.generator = chosenClip;
             footstepSource.Play();
+            hapticTimerStep = hapticDurationStep;
+            moving = true;
         }
         else
         {
-            if (math.abs(deltaX) > 0 || math.abs(deltaZ) > 0)
+            if (math.abs(deltaX) > deadZone || math.abs(deltaZ) > deadZone)
             {
                 timer -= math.abs(deltaX) + math.abs(deltaZ);
+                moving = true;
             }
             else if (moving)
             {
                 if (math.abs(moveAction.ReadValue<Vector2>().x) > 0.7 | math.abs(moveAction.ReadValue<Vector2>().y) > 0.7)
                 {
-                    chosenClip = bonkSound;
-                    footstepSource.generator = chosenClip;
-                    footstepSource.Play();
-                    //var gamepad = GetGamepad();
-                    //gamepad.SetMotorSpeeds(1, 1);
+                    //chosenClip = bonkSound;
+                    //footstepSource.generator = chosenClip;
+                    //footstepSource.Play();
+                    hapticTimerHit = hapticDurationHit;
                     Debug.Log("hitWall");
                     moving = false;
                 }
@@ -172,5 +186,20 @@ public class FootstepController : MonoBehaviour
 
         }
 
+        //manage haptics
+        if (hapticTimerHit > 0)
+        {
+            hapticTimerHit -= Time.deltaTime;
+            Gamepad.current.SetMotorSpeeds(.4f, .2f);
+        }
+        else if (hapticTimerStep > 0)
+        {
+            hapticTimerStep -= Time.deltaTime;
+            Gamepad.current.SetMotorSpeeds(.15f, 0);
+        }
+        else
+        {
+            Gamepad.current.SetMotorSpeeds(0, 0);
+        }
     }
 }
