@@ -206,6 +206,10 @@ public class StoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
         switch (chapter)
         {
             default:
