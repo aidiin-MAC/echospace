@@ -69,11 +69,11 @@ public class FootstepController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Determines movement rate
-        deltaX = (myTransform.position.x - oldX)*Time.deltaTime;
-        deltaZ = (myTransform.position.z - oldZ)*Time.deltaTime;
+        deltaX = (myTransform.position.x - oldX);
+        deltaZ = (myTransform.position.z - oldZ);
         oldX = myTransform.position.x;
         oldZ = myTransform.position.z;
 

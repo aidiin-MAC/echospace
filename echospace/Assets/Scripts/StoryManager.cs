@@ -45,6 +45,7 @@ public class StoryManager : MonoBehaviour
 
     InputAction resetAction;
     InputAction cameraAction;
+    InputAction exitAction;
     private bool cameraReleased;
     public Animator cameraControl;
 
@@ -62,6 +63,7 @@ public class StoryManager : MonoBehaviour
 
         resetAction = InputSystem.actions.FindAction("Reset");
         cameraAction = InputSystem.actions.FindAction("Camera");
+        exitAction = InputSystem.actions.FindAction("Exit");
         cameraReleased = true;
     }
     [ContextMenu("IncrementChapter")]
@@ -206,10 +208,12 @@ public class StoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
+        if (exitAction.IsPressed())
         {
             Application.Quit();
+            Debug.Log("This would exit the game");
         }
+
         switch (chapter)
         {
             default:
